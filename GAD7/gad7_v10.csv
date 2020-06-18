@@ -1,0 +1,14 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+gad7_cde_id,gad7_v10,,text,CDE-ID,,,,,,,,,,,,," @HIDDEN @DEFAULT='gad7_v10'"
+gad7_camh_cde,gad7_v10,,descriptive,"This instrument was downloaded from the CAMH Common Data Elements Library. All fields have been institutionally standardized and should not be modified. Please direct any questions or concerns to <a href=""mailto:clinical.redcap@camh.ca"">clinical.redcap@camh.ca</a>
+
+This field is @HIDDEN",,,,,,,,,,,,," @HIDDEN"
+sc_gad1,gad7_v10,"Over the last 2 weeks, how often have you been bothered by the following problems?  ",radio,"1.  Feeling nervous, anxious, or on edge","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad2,gad7_v10,,radio,"2.  Not being able to stop or control worrying","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad3,gad7_v10,,radio,"3.  Worrying too much about different things","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad4,gad7_v10,,radio,"4.  Trouble relaxing","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad5,gad7_v10,,radio,"5.  Being so restless that it's hard to sit still","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad6,gad7_v10,,radio,"6.  Becoming easily annoyed or irritable","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+sc_gad7,gad7_v10,,radio,"7.  Feeling afraid as if something awful might happen","0, Not at all | 1, Several days | 2, Over half the days | 3, Nearly every day",,,,,,,y,LV,,,,
+gad7_calc,gad7_v10,,calc,"Total Score","sum([sc_gad1],[sc_gad2],[sc_gad3],[sc_gad4],[sc_gad5],[sc_gad6],[sc_gad7])",,,,,,,,LV,,,,
+sc_difficult,gad7_v10,,radio,"If you checked off any problems, how difficult have these made it for you to do your work, take care of things at home, or get along with other people?","0, Not difficult at all | 1, Somewhat difficult | 2, Very difficult | 3, Extremely difficult",,,,,,,y,LV,,,,
