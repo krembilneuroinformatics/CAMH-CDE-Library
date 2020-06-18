@@ -1,0 +1,6 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+phq9_cde_id,phq9_v20,,text,CDE-ID,,,,,,,,,,,,," @HIDDEN @DEFAULT='phq9_v20'"
+phq9_camh_cde,phq9_v20,,descriptive,"This instrument was downloaded from the CAMH Common Data Elements Library. All fields have been institutionally standardized and should not be modified. Please direct any questions or concerns to <a href=""mailto:clinical.redcap@camh.ca"">clinical.redcap@camh.ca</a>
+
+This field is @HIDDEN",,,,,,,,,,,,," @HIDDEN"
+phq9_calc,phq9_v20,,text,"PHQ-9  Total Score:",,,number,,,,,y,,,,,
